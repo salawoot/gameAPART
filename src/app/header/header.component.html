@@ -7,6 +7,13 @@
     <li class="nav-item" *ngFor="let menu of mainMenu" routerLinkActive="active">
       <a class="nav-link" [routerLink]="[menu.link]">{{menu.name}}<span class="sr-only">(current)</span></a>
     </li>
-    
+
   </ul>
+
+  <form class="form-inline float-lg-right">
+    <button type="button" class="btn btn-link signIN">เข้าระบบ</button>
+    <span>|</span>
+    <button class="btn btn-outline-primary">สมัคสมาชิก</button>
+  </form>
+
 </nav>
