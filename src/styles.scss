@@ -1,6 +1,14 @@
 /* You can add global styles to this file, and also import other style files */
+
+$bac-color: #ECEFF1;
+$box-coloe: #FFFFFF;
+
+@mixin set-padding-margin($PXs) {
+    padding: PXs;
+    margin: PXs;
+}
+
 html,body {
-    background-color: #ECEFF1;
-    padding: 0px;
-    margin: 0px;
+    background-color: $bac-color;
+    @include set-padding-margin(0px);
 }
