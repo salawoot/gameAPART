@@ -7,3 +7,19 @@ form button.signIN {
     padding-right: 0px;
     padding-left: 0px;
 }
+
+.kuma-hend {
+    text-align: right;
+}
+
+#navbarResponsive {
+    text-align: center;
+}
+
+@media (max-width: 767px) { 
+    .kuma-login {
+        margin-top: 8px;
+        padding-top: 8px;
+        border-top: 1px solid #dddddd;
+    }
+}
