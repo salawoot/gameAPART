@@ -2,6 +2,7 @@
 
 $bac-color: #ECEFF1;
 $box-bac-coloe: #FFFFFF;
+@import url('https://fonts.googleapis.com/css?family=Kanit');
 
 @mixin set-padding-margin($PXs) {
     padding: PXs;
@@ -10,5 +11,6 @@ $box-bac-coloe: #FFFFFF;
 
 html,body {
     background-color: $bac-color;
+    font-family: 'Kanit', sans-serif;
     @include set-padding-margin(0px);
 }

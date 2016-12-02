@@ -1,0 +1,82 @@
+@mixin centerer {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:500');
+$break-phone: 768px;
+$break-large: 1200px;
+.group-button-login {
+    display: inline-block;
+    button:first-child {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+}
+
+.main-btn-login {
+    width: 100%;
+}
+
+.box-kuma-login {
+    @media screen and (max-width: $break-phone) {
+        width: 100%;
+    }
+    @media screen and (min-width: $break-phone) {
+        @include centerer();
+    }
+    .container-fluid {
+        @media screen and (max-width: $break-phone) {
+            padding: 0px;
+            padding-top: 13px;
+        }
+        div form {
+            padding: 15px;
+            background: #FFFFFF;
+        }
+        h2.form-signin-heading {
+            text-align: center;
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .box-kuma-login {
+        width: 100%;
+    }
+}
+
+.autOlogin {
+    display: block;
+    text-align: center;
+    button {
+        margin-top: 3px;
+        margin-bottom: 3px;
+        font-family: 'Roboto', sans-serif;
+        &.facebook-btn {
+            background: #3b5998;
+            color: #f7f7f7;
+            svg {
+                padding-right: 6px;
+                vertical-align: middle;
+            }
+            &:hover {
+                background: #4E69A2;
+            }
+        }
+        &.google-btn {
+            background: #FFFFFF;
+            color: #757575;
+            box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .25);
+            &:hover {
+                background: #dddddd;
+            }
+            svg {
+                padding-right: 6px;
+                vertical-align: middle;
+            }
+        }
+    }
+}
