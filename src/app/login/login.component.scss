@@ -56,6 +56,7 @@ $break-large: 1200px;
         margin-top: 3px;
         margin-bottom: 3px;
         font-family: 'Roboto', sans-serif;
+        box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .25);
         &.facebook-btn {
             background: #3b5998;
             color: #f7f7f7;
@@ -70,7 +71,6 @@ $break-large: 1200px;
         &.google-btn {
             background: #FFFFFF;
             color: #757575;
-            box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .25);
             &:hover {
                 background: #dddddd;
             }
