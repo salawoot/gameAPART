@@ -81,3 +81,12 @@ $break-large: 1200px;
         }
     }
 }
+
+.box-mock {
+    display: block;
+    width: 100%;
+    min-height: 700px;
+    @media (max-width: 767px) {
+        min-height: 450px;
+    }
+}
