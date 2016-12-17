@@ -1,0 +1,30 @@
+<div class="header-home-displaytext">
+  <div class="row">
+    <h2>Welcome To ร้านอะไรวะ</h2>
+  </div>
+  <div>
+    <div class="card-deck-wrapper">
+      <div class="card-deck">
+        <div class="my-card col-xs-12 col-sm-4 col-md-4 col-lg-4" *ngFor="let menu of content">
+          <div class="card ">
+            <div class="row">
+              <div class="show-img col-xs-12 col-sm-10 col-md-10">
+                <img class="card-img-top" src="{{menu.image}}" alt="Card image cap">
+              </div>
+              <div class="select-img col-xs-12 col-sm-2 col-md-2">
+                <a><img class="right-imagr" src="{{menu.image}}" alt="Card image cap"></a>
+                <a><img class="right-imagr" src="{{menu.image}}" alt="Card image cap"></a>
+                <a><img class="right-imagr" src="{{menu.image}}" alt="Card image cap"></a>
+              </div>
+            </div>
+            <div class="card-block">
+              <h4 class="card-text name-product">{{menu.title}} <small>more..</small></h4>
+              <p class="card-text display-price"><small>{{menu.old_price}} {{menu.type_price}}</small><span>{{menu.new_price}} {{menu.type_price}}</span></p>
+              <a class="btn btn-secondary btn-md btn-block">เอาใส่ตะกร้าให้ไว</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
